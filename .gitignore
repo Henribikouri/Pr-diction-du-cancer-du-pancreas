@@ -1,0 +1,18 @@
+# Fichiers et dossiers spécifiques à Python
+__pycache__/
+*.pyc
+*.log
+.mypy_cache/
+.pytest_cache/
+.vscode/
+
+# Environnement virtuel (si vous en avez un)
+venv/
+.venv/
+
+# Base de données Django
+db.sqlite3
+
+# Fichiers volumineux à ignorer
+# Ceci ignore l'intégralité du contenu du dossier 'datasets'
+datasets/

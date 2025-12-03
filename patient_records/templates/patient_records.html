@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Records</title>
+</head>
+<body>
+    <h1>Bienvenue sur la page Patient Records</h1>
+    <ul class="mt-4">
+        <li><a href="{% url 'patient_list' %}">Liste des patients</a></li>
+        <li><a href="{% url 'create_patient' %}">Ajouter un patient</a></li>
+        <li><a href="{% url 'process_image' 0 %}">Traiter une image</a></li>
+        <li><a href="{% url 'generate_report' 0 %}">Générer un rapport</a></li>
+    </ul>
+</body>
+</html>

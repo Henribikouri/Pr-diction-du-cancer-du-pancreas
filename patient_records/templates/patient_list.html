@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Patients</title>
+</head>
+<body>
+    <h1>Liste des Patients</h1>
+    <ul>
+        {% for patient in patients %}
+            <li>{{ patient.name }} - <a href="{% url 'patient_details' patient.id %}">Voir Détails</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'create_patient' %}">Créer un Nouveau Patient</a>
+</body>
+</html>

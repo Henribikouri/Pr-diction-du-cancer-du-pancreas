@@ -1,0 +1,15 @@
+<h1>{{ patient.name }}</h1>
+<p>Date de naissance: {{ patient.date_of_birth }}</p>
+<p>Diagnostic: {{ patient.diagnosis }}</p>
+
+<h2>Images Traitée</h2>
+{% for image in images %}
+    <img src="{{ image.file_url }}" alt="Image traitée">
+    <p>Résultat: {{ image.result }}</p>
+{% endfor %}
+
+<h2>Rapports d'Analyse</h2>
+{% for report in reports %}
+    <a href="{{ report.file_url }}">Télécharger le rapport</a>
+    <p>{{ report.summary }}</p>
+{% endfor %}
